@@ -1,0 +1,7 @@
+print("Welcome to tip Calculator")
+bill = int(input("What was the total bill?"))
+tip = int(input("What percentage tip would you like to give?10,12 or 15 ?"))
+no_of_ppl= int(input("How many people are paying?"))
+total_bill = bill*(1+tip/100)
+actual_bill = round(total_bill/no_of_ppl,2)
+print(f"Your bill is {actual_bill}")
